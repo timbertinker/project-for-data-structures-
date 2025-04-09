@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import sys
 ############################################################
 xyz=[]
-with open(sys.argv[1],"r",0) as in_ptr:
+with open(sys.argv[2],"r",0) as in_ptr:
 	xyz = [[float(v) for v in line.split()]for line in in_ptr]
 z,x, y = zip(*xyz)
 ############################################################
