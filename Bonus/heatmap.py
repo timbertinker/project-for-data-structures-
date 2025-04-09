@@ -13,7 +13,7 @@ with open(sys.argv[1],"r",0) as in_ptr:
 	z,x,y = zip(*xyz)
 	in_ptr.close()
 ############################################################
-	heatmap, xedges, yedges = np.histogram2d(x,y,bins=10) # Modifica bins=x pentru rezolutie
+	heatmap, xedges, yedges = np.histogram2d(x,y,bins=100) # Modifica bins=x pentru rezolutie
 	extent = [xedges[0],xedges[-1],yedges[0],yedges[-1]]
 ############################################################
 	plt.clf()
